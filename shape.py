@@ -8,7 +8,12 @@ def main():
     pygame.init()
     screen = pygame.display.set_mode((400,300))
     
-    pygame.draw.circle(screen, RED, (40,40), 20)
+    # The pos argument is the center of the circle, and radius is the size
+    pygame.draw.circle(screen, RED, (20,40), 20)
+    
+    pygame.draw.circle(screen, RED, (380,80), 20)
+    pygame.draw.circle(screen, YELLOW, (380,120), 20)
+    
     pygame.display.update()
     
     while True:
